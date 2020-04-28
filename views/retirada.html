@@ -1,0 +1,306 @@
+<div class="col-md-12" id="conteudo">
+  <form id="form1" method="POST" action="/retirada">
+    <div class="form-group">
+      <label for="inputComodataria">Comodatária</label>
+      <input
+        type="text"
+        class="form-control"
+        name="comodataria"
+        placeholder="Razão Social"
+      />
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCNPJ">CNPJ</label>
+        <input
+          type="text"
+          class="form-control"
+          name="cnpj"
+          placeholder="XX.XXX.XXX/YYYY-ZZ"
+        />
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputMatricula">Matrícula</label>
+        <input
+          type="text"
+          class="form-control"
+          name="matricula"
+          placeholder="12345678"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEndereco">Endereço</label>
+      <input
+        type="text"
+        class="form-control"
+        name="endereco"
+        placeholder="Logradouro, Cidade, Estado"
+      />
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputRepLegal">Representante Legal</label>
+        <input
+          type="text"
+          class="form-control"
+          name="representante"
+          placeholder="Nome Completo"
+        />
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCPF">CPF</label>
+        <input
+          type="text"
+          class="form-control"
+          name="cpf"
+          placeholder="111.111.111-11"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputtags">TAGs</label>
+      <input
+        type="text"
+        class="form-control"
+        name="tag"
+        placeholder="# das tags"
+      />
+    </div>
+
+    <div class="row">
+      <legend class="col-form-label col-md-2 pt-0">Motivos</legend>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="baixovolume"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >Baixo Volume</label
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="energia"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >Consumo de Energia</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="vendazero"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >Venda Zero</label
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="concorrencia"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >Migrou para Concorrência</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="juridico"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1">Jurídico</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="conservacao"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >Estado de Conservação</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="mauuso"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1">Mau uso</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="desligado"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >Equipamento Desligado</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="encerrou"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >Cliente encerrou as atividades</label
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="evento"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2">Evento</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="migrou"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >Migrou para equipamento próprio</label
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="reforma"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >PV será reformado</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="reduzir"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox1"
+            >Reduzir No Equipamentos</label
+          >
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="vandalismo"
+            value="true"
+          />
+          <label class="form-check-label" for="inlineCheckbox2"
+            >Vandalismo</label
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-auto">Tipo de Assinatura</legend>
+        <div class="col-auto mr-auto">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoassinatura"
+              id="gridRadios1"
+              value="remota"
+              checked
+            />
+            <label class="form-check-label" for="gridRadios1">
+              Remota
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="tipoassinatura"
+              id="gridRadios2"
+              value="presencial"
+            />
+            <label class="form-check-label" for="gridRadios2">
+              Presencial
+            </label>
+          </div>
+        </div>
+        <div class="col-auto ml-auto">
+          <button type="submit" class="btn btn-assinatura">
+            Enviar para Assinatura
+          </button>
+        </div>
+      </div>
+    </fieldset>
+    <br />
+  </form>
+</div>
